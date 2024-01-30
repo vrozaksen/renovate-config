@@ -16,8 +16,6 @@
   "dependencyDashboardTitle": "Renovate Dashboard 🤖",
   "suppressNotifications": ["prEditedNotification", "prIgnoreNotification"],
   "rebaseWhen": "conflicted",
-  "assigneesFromCodeOwners": true,
-  "reviewersFromCodeOwners": true,
   "commitBodyTable": true,
   "platformCommit": true
 }
