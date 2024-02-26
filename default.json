@@ -6,11 +6,11 @@
     ":disableRateLimiting",
     "docker:enableMajor",
     ":enablePreCommit",
-    "github>LilDrunkenSmurf/renovate-config:automerge-github-actions",
-    "github>LilDrunkenSmurf/renovate-config:commit-message",
-    "github>LilDrunkenSmurf/renovate-config:pr-labels",
-    "github>LilDrunkenSmurf/renovate-config:semantic-commits",
-    "github>LilDrunkenSmurf/renovate-config:custom-managers.json5"
+    "github>joryirving/renovate-config:automerge-github-actions",
+    "github>joryirving/renovate-config:commit-message",
+    "github>joryirving/renovate-config:pr-labels",
+    "github>joryirving/renovate-config:semantic-commits",
+    "github>joryirving/renovate-config:custom-managers.json5"
   ],
   "timezone": "America/Edmonton",
   "dependencyDashboardTitle": "Renovate Dashboard 🤖",
