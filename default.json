@@ -6,6 +6,7 @@
     ":disableRateLimiting",
     "docker:enableMajor",
     ":enablePreCommit",
+    "mergeConfidence:all-badges",
     "github>joryirving/renovate-config:autoMerge",
     "github>joryirving/renovate-config:commitMessage",
     "github>joryirving/renovate-config:labels",
