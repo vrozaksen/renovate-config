@@ -7,15 +7,17 @@
     "docker:enableMajor",
     ":enablePreCommit",
     "mergeConfidence:all-badges",
-    "github>joryirving/renovate-config:autoMerge",
+    "github>joryirving/renovate-config:autoMergeDocker",
+    "github>joryirving/renovate-config:autoMergeGithubActions",
     "github>joryirving/renovate-config:commitMessage",
+    "github>joryirving/renovate-config:customManagers",
     "github>joryirving/renovate-config:labels",
     "github>joryirving/renovate-config:semanticCommits"
   ],
   "timezone": "America/Edmonton",
   "dependencyDashboardTitle": "Renovate Dashboard 🤖",
   "suppressNotifications": ["prEditedNotification", "prIgnoreNotification"],
-  "rebaseWhen": "conflicted",
   "commitBodyTable": true,
-  "platformCommit": true
+  "rebaseWhen": "auto",
+  "platformCommit": "enabled"
 }
