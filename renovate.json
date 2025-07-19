@@ -1,5 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Self-hosting Renovate config for this repository",
   "extends": [
     "local>vrozaksen/renovate-config"
   ]

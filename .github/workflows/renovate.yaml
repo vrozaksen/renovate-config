@@ -6,11 +6,12 @@ on:
   push:
     branches: ["main"]
     paths:
-      - ".github/workflows/**.yaml"
-      - default.json
-      - ./**.json5
+      - ".github/workflows/renovate.yaml"
+      - "default.json"
+      - "renovate.json"
+      - "**/*.json5"
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 * * * *" # Every hour
   workflow_dispatch:
     inputs:
       dryRun:
@@ -19,7 +20,7 @@ on:
         default: false
         required: true
       autodiscover_filter:
-        description: "Autodiscover filter"
+        description: "Autodiscover filter (repo pattern)"
         default: "*"
         required: false
       cache:
@@ -37,10 +38,12 @@ on:
         options:
           - debug
           - info
+          - warn
+          - error
         required: false
       version:
         description: "Renovate Version"
-        default: latest
+        default: "latest"
         required: true
 
 concurrency:

@@ -1,49 +1,86 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "Comprehensive labeling rules for dependency updates",
   packageRules: [
     {
+      description: "Label major updates",
       matchUpdateTypes: ["major"],
       labels: ["type/major"],
     },
     {
+      description: "Label minor updates",
       matchUpdateTypes: ["minor"],
       labels: ["type/minor"],
     },
     {
+      description: "Label patch updates",
       matchUpdateTypes: ["patch"],
       labels: ["type/patch"],
     },
     {
+      description: "Label digest updates",
       matchUpdateTypes: ["digest"],
       labels: ["type/digest"],
     },
     {
+      description: "Label Docker/container updates",
       matchDatasources: ["docker"],
       addLabels: ["renovate/container"],
     },
     {
+      description: "Label Helm chart updates",
       matchDatasources: ["helm"],
       addLabels: ["renovate/helm"],
     },
     {
+      description: "Label Ansible/Galaxy updates",
       matchDatasources: ["galaxy", "galaxy-collection"],
       addLabels: ["renovate/ansible"],
     },
     {
+      description: "Label Terraform provider updates",
       matchDatasources: ["terraform-provider"],
       addLabels: ["renovate/terraform"],
     },
     {
+      description: "Label GitHub Actions updates",
       matchManagers: ["github-actions"],
       addLabels: ["renovate/github-action"],
     },
     {
+      description: "Label GitHub releases/tags updates",
       matchDatasources: ["github-releases", "github-tags"],
       addLabels: ["renovate/github-release"],
     },
     {
+      description: "Label Python/pip updates",
       matchDatasources: ["pypi"],
       addLabels: ["renovate/pip"],
+    },
+    {
+      description: "Label npm/Node.js updates",
+      matchDatasources: ["npm"],
+      addLabels: ["renovate/npm"],
+    },
+    {
+      description: "Label Go module updates",
+      matchManagers: ["gomod"],
+      addLabels: ["renovate/go"],
+    },
+    {
+      description: "Label Rust/Cargo updates",
+      matchManagers: ["cargo"],
+      addLabels: ["renovate/rust"],
+    },
+    {
+      description: "Label pre-commit hook updates",
+      matchManagers: ["pre-commit"],
+      addLabels: ["renovate/pre-commit"],
+    },
+    {
+      description: "Label Mise tool updates",
+      matchManagers: ["mise"],
+      addLabels: ["renovate/mise"],
     },
   ],
 }

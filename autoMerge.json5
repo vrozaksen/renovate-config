@@ -1,5 +1,6 @@
 {
   $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  description: "Auto-merge configuration for trusted dependencies and safe updates",
   packageRules: [
     {
       description: "Auto-merge GitHub Actions",
@@ -11,14 +12,12 @@
       ignoreTests: true,
     },
     {
-      description: "Auto-merge trusted GitHub Actions",
+      description: "Auto-merge trusted GitHub Actions (short delay)",
       matchManagers: ["github-actions"],
       matchPackageNames: [
-        "/^actions\//",
-        "/^anchore\//",
-        "/^docker\//",
-        "/^renovatebot\//",
-        "/^sigstore\//",
+        "/^actions\//",        // Official GitHub Actions
+        "/^docker\//",         // Official Docker Actions
+        "/^renovatebot\//",    // Official Renovate Actions
       ],
       automerge: true,
       automergeType: "branch",
@@ -32,6 +31,25 @@
       automerge: true,
       automergeType: "branch",
       matchUpdateTypes: ["minor", "patch"],
+      ignoreTests: true,
+    },
+    {
+      description: "Auto-merge safe package managers",
+      matchManagers: ["npm", "pip", "cargo", "gomod"],
+      matchDepTypes: ["devDependencies"],
+      automerge: true,
+      automergeType: "branch",
+      matchUpdateTypes: ["patch"],
+      minimumReleaseAge: "3 days",
+      ignoreTests: true,
+    },
+    {
+      description: "Auto-merge pre-commit hooks",
+      matchManagers: ["pre-commit"],
+      automerge: true,
+      automergeType: "branch",
+      matchUpdateTypes: ["minor", "patch", "digest"],
+      minimumReleaseAge: "3 days",
       ignoreTests: true,
     },
   ],

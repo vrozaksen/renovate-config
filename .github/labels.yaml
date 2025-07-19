@@ -2,43 +2,87 @@
 # Area Labels
 - name: area/docs
   color: "0e8a16"
+  description: "Documentation related changes"
 - name: area/github
   color: "0e8a16"
+  description: "GitHub specific configurations"
 - name: area/renovate
   color: "0e8a16"
+  description: "Renovate configuration changes"
 - name: area/terraform
   color: "0e8a16"
-# Renovate Types
+  description: "Terraform related changes"
+
+# Renovate Package Manager Labels
+- name: renovate/ansible
+  color: "027fa0"
+  description: "Ansible Galaxy dependency updates"
 - name: renovate/container
   color: "027fa0"
+  description: "Container/Docker image updates"
 - name: renovate/github-action
   color: "027fa0"
-- name: renovate/grafana-dashboard
-  color: "027fa0"
+  description: "GitHub Actions dependency updates"
 - name: renovate/github-release
   color: "027fa0"
+  description: "GitHub release dependency updates"
+- name: renovate/go
+  color: "027fa0"
+  description: "Go module dependency updates"
+- name: renovate/grafana-dashboard
+  color: "027fa0"
+  description: "Grafana dashboard updates"
 - name: renovate/helm
   color: "027fa0"
+  description: "Helm chart dependency updates"
+- name: renovate/mise
+  color: "027fa0"
+  description: "Mise/asdf tool updates"
+- name: renovate/npm
+  color: "027fa0"
+  description: "npm package dependency updates"
+- name: renovate/pip
+  color: "027fa0"
+  description: "Python pip dependency updates"
+- name: renovate/pre-commit
+  color: "027fa0"
+  description: "Pre-commit hook updates"
+- name: renovate/rust
+  color: "027fa0"
+  description: "Rust Cargo dependency updates"
 - name: renovate/terraform
   color: "027fa0"
-# Semantic Types
+  description: "Terraform provider updates"
+
+# Semantic Update Type Labels
 - name: type/digest
-  color: "ffeC19"
+  color: "ffec19"
+  description: "Digest/hash only updates"
 - name: type/patch
-  color: "ffeC19"
+  color: "ffec19"
+  description: "Patch version updates (bug fixes)"
 - name: type/minor
   color: "ff9800"
+  description: "Minor version updates (new features, backwards compatible)"
 - name: type/major
   color: "f6412d"
-# Issue Types
+  description: "Major version updates (breaking changes)"
+
+# Issue Type Labels
 - name: issue/bug
   color: "ff0000"
+  description: "Bug reports"
 - name: issue/feature
   color: "00ff00"
+  description: "Feature requests"
 - name: issue/chore
   color: "0000ff"
-# Uncategorized
+  description: "Maintenance tasks"
+
+# Status Labels
 - name: community
   color: "370fb2"
+  description: "Community contributions"
 - name: hold
   color: "ee0701"
+  description: "Do not merge/process"
