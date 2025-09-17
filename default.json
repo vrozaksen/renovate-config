@@ -12,6 +12,7 @@
     ":separatePatchReleases",
     ":timezone(Europe/Warsaw)",
     "github>vrozaksen/renovate-config:autoMerge.json5",
+    "github>vrozaksen/renovate-config:changelogs.json5",
     "github>vrozaksen/renovate-config:labels.json5",
     "github>vrozaksen/renovate-config:semanticCommits.json5"
   ],
