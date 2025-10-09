@@ -19,10 +19,10 @@
   "dependencyDashboardTitle": "Renovate Dashboard 🤖",
   "suppressNotifications": [
     "prEditedNotification",
-    "prIgnoreNotification"
+    "prIgnoreNotification",
+    "prCreationNotification"
   ],
   "commitBodyTable": true,
   "rebaseWhen": "auto",
-  "platformCommit": "enabled",
-  "reviewers": ["github-copilot[bot]"]
+  "platformCommit": "enabled"
 }
